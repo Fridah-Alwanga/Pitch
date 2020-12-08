@@ -18,9 +18,9 @@ This is a flask application that allows users to post one minute pitches and als
 
 
 ## Technology used
-Python3.7<br>
-Flask<br>
-Heroku<br>
+1.Python3.7<br>
+2.Flask<br>
+3.Heroku<br>
 
 ## Contact Information
 If you have any question or contributions, please email me at [fridahalwanga6@gmail.com]
