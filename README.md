@@ -11,10 +11,10 @@ This is a flask application that allows users to post one minute pitches and als
 
 
 ## User Story
-1.Comment on the different pitches posted py other uses.
-2.See the pitches posted by other uses.
-3.Register to be allowed to log in to the application
-4.Submit a pitch to a specific category of their choice.
+1.Comment on the different pitches posted py other uses.<br>
+2.See the pitches posted by other uses.<br>
+3.Register to be allowed to log in to the application<br>
+4.Submit a pitch to a specific category of their choice.<br>
 
 
 ## Technology used
