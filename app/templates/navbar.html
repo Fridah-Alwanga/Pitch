@@ -1,22 +1,17 @@
- <div class="navbar navbar-light" role="navigation" style="margin-bottom:0; border-bottom: 1px solid;"> 
     <nav class="navbar navbar-dark default-color">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand"><Strong>One Minute Pitch</Strong></a>
+               
+                <a href="/" class="navbar-brand"><Strong></Strong></a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="{{url_for('main.interview_pitches')}}">Interview</a></li>
-                    <li><a href="{{url_for('main.product_pitches')}}">Product</a></li>
-                    <li><a href="{{url_for('main.promotion_pitches')}}">Promotion</a></li>
-                </ul>
+                <div class="nav navbar-nav">
+                    <a style="font-size: 30px;" href="/">Home</a>
+                    <a style="font-size: 30px; padding-left:25px; color: black;" href="{{url_for('main.interview_pitches')}}">Interview</a>
+                    <a style="font-size: 30px; padding-left:25px; color: black;" href="{{url_for('main.product_pitches')}}">Product</a>
+                    <a style="font-size: 30px; padding-left:25px; color: black;" href="{{url_for('main.promotion_pitches')}}">Promotion</a>
+                    <a style="font-size: 30px; padding-left:1300px; color:  black;" href="{{url_for('auth.login')}}"> Sign in</a>
+                </div>
     
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_authenticated %}
@@ -24,19 +19,27 @@
                             aria-haspopup="true" aria-expanded="false">{{current_user.username| capitalize}} <span
                                 class="caret"></span></a>
                         <ul class="dropdown-menu ">
-                            <li><a href="{{url_for('main.profile',uname=current_user.username)}}"> Profile</a></li>
+                            <a href="{{url_for('main.profile',uname=current_user.username)}}"> Profile</a>
                             <hr>
-                            <li><a href="{{url_for('main.user_pitches',uname=current_user.username)}}"> My Pitches</a></li>
+                            <a href="{{url_for('main.user_pitches',uname=current_user.username)}}"> My Pitches</a>
                             <hr>
-                            <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
+                            <a href="{{url_for('auth.logout')}}">Sign out</a>
                         </ul>
-                    </li>
+                    
                     {% else %}
-                    <li><a href="{{url_for('auth.login')}}"> Sign in</a></li>
                 </ul>
                 {%endif%}
             </div>
         </div>
          </div>
     </nav>
-    
+
+
+
+
+
+
+
+
+
+

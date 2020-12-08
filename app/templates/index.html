@@ -12,30 +12,30 @@
 
 <!-- Content block -->
 {%block content%}
+<div class="jumbotron text-center" style=padding:30px 40px;>
 
-<body>
+
     <div style="background-image:url(../static/photos/images\ \(3\).jpeg);background-repeat:no-repeat; background-size:cover; "> 
 
 
         <div class=back>
             <div class=" text-center " style="font-family: 'Indie Flower', cursive; color: #fff; padding: 55px 25px; ">
-                <h1 class="head"><strong>Welcome to the Best pitch</strong></h1>
+                <h1 class="head"><strong>One Minutes Pitch</strong></h1>
             </div>
             <hr>
             <br><br>
             <div class="container" style="font-family: 'Cormorant Upright', serif;">
-                <div class="row">
+                <div class="col-md-4">
                     <div class="col-md-4">
                         <div class="well well-lg" style="text-align: center;">
                             <h3>Interviews Pitches</h3>
                             <hr>
                             <p style="font-size: 40px;">Essentially it’s a short summary about yourself and what you do,<br> in an interview.  </p>
-                            <div class="jumbotron text-center" style="background-color: rgb(23, 9, 223); padding: 100px 25px; font-family: 'Indie Flower', cursive;">
 
                             <a href="{{url_for('main.interview_pitches')}}"
-                                class="btn btn-info btn-center -center">Click to
+                                class="btn btn-info btn-center -center" style="font-size: 30px;">Click to
                                 view</a>
-                        </div>
+                    
                     </div>
                     <div class="col-md-4" style="text-align: center;">
                         <div class="well well-lg">
@@ -43,7 +43,7 @@
                             <hr>
                             <p style="font-size: 40px;">Make it short. · Make it clear. · Explain who your customers are. <br>· Explain the problem
                                 they're facing. </p>
-                            <a href="{{url_for('main.product_pitches')}}" class="btn btn-info -center">Click to view</a>
+                            <a href="{{url_for('main.product_pitches')}}" class="btn btn-info -center" style="font-size: 30px;">Click to view</a>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -52,17 +52,17 @@
                             <hr>
                             <p style="font-size: 40px;">A sales pitch is a condensed sales presentation,<br> a salesperson explains the nature and
                                 benefits of their business in less than one or two minutes.</p>
-                            <a href="{{url_for('main.promotion_pitches')}}" class="btn btn-info -center">Click to
+                            <a href="{{url_for('main.promotion_pitches')}}" class="btn btn-info -center" style="font-size: 30px;">Click to
                                 view</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div style="padding-bottom: 20px; text-align: center;">
-                <a href="{{url_for('main.new_pitch')}}" class="btn btn-info btn-center">Click to create a pitch</a>
+                <a href="{{url_for('main.new_pitch')}}" class="btn btn-info btn-center" style="font-size: 30px;">Click to create a pitch</a>
             </div>
         </div>
     </div>
-</body>
+</div>
 
 {%endblock%}
