@@ -1,0 +1,16 @@
+body{
+    overflow-x: hidden;
+}
+.back{
+    position: absolute;
+    top: 8%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+.head{
+    font-size: 100px;
+    
+
+}
